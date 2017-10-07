@@ -1,0 +1,421 @@
+@font-face {
+	font-family: 'usagi_rpg';
+	src:url('fonts/usagi_rpg.eot?86ej4w');
+	src:url('fonts/usagi_rpg.eot?#iefix86ej4w') format('embedded-opentype'),
+		url('fonts/usagi_rpg.woff?86ej4w') format('woff'),
+		url('fonts/usagi_rpg.ttf?86ej4w') format('truetype'),
+		url('fonts/usagi_rpg.svg?86ej4w#usagi_rpg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'usagi_rpg';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 55px;
+	position:absolute;	
+}
+
+
+::-webkit-scrollbar {width: 13px; background: #343434; } ::-webkit-scrollbar-thumb { background: #FCF065; }
+
+* {
+	margin: 0px;
+	padding: 0px;
+	}
+
+div,input {border: none;}
+	
+*, *:after, *:before { 
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 	
+}
+
+body {
+	background: #333 url(img/bg1.gif);
+	font-family: Trebuchet MS;
+	font-size: 12pt;
+	color:#666;
+	overflow-x: hidden;
+	}
+	
+a { outline: none; text-decoration: none; }
+a:link, a:visited {color: #7A7171;}
+a:hover {color: #FCF065;}
+
+
+h1,h2,a,input,span {font-family: 'Helvetica Neue Light','Segoe UI Light'; font-size: 20pt; font-weight:lighter;}
+
+input[type="submit"]:active {background:#3f4773!important; color:#fff!important;}
+input[type="submit"] {
+	padding:10px 30px; 
+	background:#5c669e;
+	color:#d0d0d0;
+	cursor:pointer;
+	}
+
+#container {
+	width: 960px;
+	height:1700px;
+	margin: 0 auto;
+	}
+
+html.ie #social-login:before {margin-left: 60px;}	
+
+/* ------- DEFAULT HERE ------- */
+.hasArrow:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	border-style: solid;
+}
+.hasLine:before {
+	content: "";
+	position:absolute;
+	z-index:-1;
+    background: #fff;
+}
+
+
+.box-shadow-LV2, 
+#doc-section a div,
+#sketch-gallery div {
+	box-shadow: 		15px 15px 15px rgba(1,1,1,0.6);
+	-moz-box-shadow: 	15px 15px 15px rgba(1,1,1,0.6);
+	-webkit-box-shadow: 15px 15px 15px rgba(1,1,1,0.6);
+}
+
+.display-block {display:block!important;}
+
+	
+	
+/* ------- lateral RIGHT ------- */
+#lateral-right {
+	width: 380px;
+	float:right;
+}	
+
+
+#login_block {
+	width:350px;
+	height:270px;
+	background: #fff;
+	border-radius:10px;
+	margin-top:50px;
+	padding: -10px;
+}
+
+
+
+/* FORM INPUT */
+.input_ico:before {font-size:33pt; color: #333; margin:-63px 15px;}
+#email:focus 	~ #login-ico:before {color:#AB3C3C;}
+#password:focus ~ #password-ico:before {color:#362c81;}
+
+input {padding:15px; margin:7px;}
+input:focus {color:#333;}
+
+.input {
+	padding-left: 70px; 
+	font-size:18pt; 
+	background:#fff;
+	color:#888;
+	width:350px;
+}
+
+input, 
+.form-nav div {
+	border-bottom:1px solid #888; 
+	border-right: 1px solid #888; 
+}
+
+/* SIGN UP & SOCIAL LOGIN */
+.form-nav {float:left; margin:3px 0;}
+.form-nav div {width:185px; height:50px; font-size:12pt; padding:15px 10px; text-align:right;}
+.form-nav a:hover div, .form-nav a:hover div:before {color: #fff!important;}
+.form-nav a:hover #signup {background: #418C73;}
+				  
+
+
+.form-nav a:hover #login-with   {background: #444;}
+.form-nav a:hover #facebook 	{background: #37316E;}
+.form-nav a:hover #google 		{background: #963636;}
+.form-nav a:hover #twitter 		{background: #41928b;}
+
+/* SOCIAL... DROPDOWN */
+#social-login {position:absolute; margin-top:23px; z-index:10; display:none;}
+#social-login div {background: #fff;}
+#social-login:before {
+	/* straight-line */
+    top:-20px;
+	left:50px;
+    width:3px;
+	height:50px;
+}
+
+
+/* SUBMIT */
+#login_block #submit 		{background: #fff; 	  color:#333; width:145px; height:100px; float:right;}
+#login_block #submit:hover 	{background: #484285; color:#fff;}
+
+
+
+/* NAV-BLOCK's */
+#navigation-container {width:380px; height:380px; padding:28px 33px; background: url(img/sidebar_.png) no-repeat;}
+
+.nav-block {
+	display:block;
+	width: 140px;
+	height:130px;
+	float:left;
+	color:#444;
+	}
+.nav-block span   {display:block; margin-top:110px; text-align:center; font-size:15pt;}
+.nav-block:before {
+	margin:20px 32px; 
+	font-size:58pt; 
+}
+
+a:hover .nav-block {color: #B55959;}
+
+
+
+
+
+
+
+
+
+/* doc - SECTION(nav) */
+.doc-section { width: 250px; margin: 30px 50px 50px }
+.doc-section:before {
+	/* arrow to-top */
+	margin: -20px 180px;
+    border-width: 0px 15px 20px 15px;
+    border-color: #fff transparent; 
+}
+
+.doc-section a div {
+	height:60px; 
+	background: #fff; 
+	border-bottom: 1px solid #333; 
+	font-size:13pt; 
+	line-height:55px; 
+	padding: 0 20px; 
+	box-shadow: 15px 15px 15px #111;
+}
+.doc-section a:hover div {background:#505C70; color:#fff;}
+.doc-section a div p {float:right; font-size:20pt;}
+
+/* doc - DOCUMENTATION */
+#developers-section {display:none;}
+#y {position:absolute; display:none;}
+#doc-documentation { 
+	width: 370px;
+	margin:30px -70px; 
+	padding:30px;
+	background: #fff;
+	line-height: 30px;
+	font-size: 16px;
+}
+#doc-documentation:before{
+	/* straight-line */
+	margin: -200px 300px;
+    height:250px;
+	width:3px;
+}
+.close {
+	float:right;
+	margin:16px -30px;
+	width:50px;
+	height:50px;
+	background: #FFFAC2;
+	border: 1px solid #333;
+	padding:8px 15px; 
+}
+a:hover .close {color:#333;}
+
+#y .doc-section {
+	margin: 50px 40px;
+}
+#y .doc-section:before{
+	/* straight-line */
+	margin: -60px 50px;
+    height:100px;
+	width:3px;
+}
+
+
+
+/* END // doc - SECTION */
+
+
+
+
+
+
+/* ------- lateral LEFT  ------- */
+#lateral-left {
+	width: 580px;
+	float:left;
+}
+#usagi-logo {background: url(img/usagi-logo.png) no-repeat; width:512px; height:356px; margin:35px 68px 50px;}
+
+/* white-sketches SLIDER */
+.slider {
+	float:left;
+	width:500px;
+	text-align:center; 
+	display:none; 
+	margin:20px 0; 
+}
+
+.slidesjs-navigation div {display:block; width:60px; height:60px; margin:20px 490px; position:absolute;}
+.slidesjs-next div {margin-top:100px;}
+.slidesjs-navigation a:hover div {background: #FCF065;}
+
+/* IMAGE GALLERY */
+#sketch-gallery {display:block; width:500px;}
+#sketch-gallery div {border-top: 5px dashed #fff;}
+#sketch-gallery:before {   
+	/* straight-line */
+    margin: 100px 500px;
+	width:100px;
+	height:3px;
+}
+/* #sketch-gallery:after {content: ""; background: url(img/arrow-pixiv-2.png) no-repeat; width: 206px; height: 114px; position:absolute; margin: 0 50px;}
+*/
+
+
+
+
+/* OTHERS */
+#go_top { position:fixed; 
+		  bottom: -20px;
+		  right: 30px;
+		  display:none;
+		  font-size:60pt;
+		  width: 100px;
+		  text-align:center;
+		  }
+		  
+.loading {
+	background: url(img/loader_f.gif) no-repeat;
+	width: 40px;
+	height:40px;
+	position:fixed;
+	bottom:15px;
+	right: 15px;
+	z-index:99;
+	display:none;
+}		  
+		  
+#social-buttons {margin:25px 50px; width:380px; height: 70px;}
+#social-buttons div {float:left;}
+
+/* modal-window */	
+#window,#mascara {display:none;}
+#mascara {z-index:8; background-color: #000; position:absolute;}
+#fechar {position:absolute; margin-top:-85px; margin-left:810px; font-family: 'Segoe UI Light'; font-size: 55pt;}
+#window {
+	position:fixed;
+	z-index:99; 
+	background: #222; 
+	width:856px; 
+	height:482px; 
+	border:solid 1px #FFFF00;
+	border-left: solid 2px #FFFF00;
+}
+
+
+
+
+/* sign-up FORM */
+#signup-form {
+	margin-top:100px;
+	position:relative;
+}
+
+/* STEPS navigation */
+a.steps {color:#666;}
+a.steps div {
+	width:110px; 
+	height:110px; 
+	margin:80px 1px 0 0; 
+	float:left; 
+	background:#cecece; 
+	box-shadow:inset 10px 0 10px rgba(1,1,1,.5);
+	cursor:pointer;
+}
+
+a.steps div:before {margin:25px;}
+.steps.active div {background:#faffb7; color:#6e7051; position:relative;}
+.steps.active div:after {
+	content:"";
+	position:absolute;
+	background:#fff;
+	width:5px;
+	height:100px;
+	top:-100px;
+	left:55px;
+	z-index:-1;
+}
+
+#signup-form h1 {position:absolute; top:-50px; color:#fff;}
+#signup-form form {width:320px; background:#fff; position:relative;}
+#signup-form input {font-size:18pt; color:#999; width:320px;}
+#signup-form input:focus {color:#666;}
+#signup-form input[type="submit"] {color:#fff; width:auto;}
+#signup-form #submit {position:absolute; right:-6px; bottom:-62px;}
+
+
+#correct,#wrong {display:none;}
+#correct {position:absolute; font-size:30pt; color:#338F3E; right:-50px;}
+#wrong:before {width:230px; height:5px; top:25px; left:-230px;}
+#wrong {
+	position:absolute; 
+	right:-250px; 
+	background:#fff;
+	padding:15px;
+	}
+
+#message-log {
+	position:fixed;
+	bottom:30px;
+	right:30px;
+	width:300px;
+	min-height:50px;
+	text-align:center;
+	padding:10px;
+	z-index:5;
+	display:none;
+	background: url(img/noise_a.png) repeat-x #FFA3A3;
+	color: #5E0A0A;
+}
+#message-log p {margin:5px; font-size:13px;}
+#message-log div {
+	position:absolute;
+	right:10px;
+	top:-40px;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	font-size:18pt;
+	background:#FFFAC2;
+	box-shadow:inset 0px -5px 5px rgba(1,1,1,.4);
+	cursor:pointer;
+	color:#333;
+}
+
+/*----------------------------------*/
+#mail-confirmed {width:400px; margin:150px; padding:150px 20px 40px; position:relative;}
+#mail-confirmed span:before {margin-top:-120px; left:150px; font-size:60pt;}

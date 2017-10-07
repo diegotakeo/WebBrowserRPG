@@ -1,0 +1,136 @@
+/* navigation - configuration (link) */
+a:hover#config	 	div, a#config.active	div{background:#4A4975;}
+
+/* --------------------------------------------------------------- */	
+
+/* cover e avatar CHANGE (link) */
+#cover .change{bottom:15px;}
+.change {
+	position:absolute; 
+	bottom:5px; 
+	right:20px; 
+	width:150px; 
+	height:35px; 
+	padding:5px 10px;
+	border:1px solid #999; 
+	background:#fff; 
+	display:none;
+}
+.change:before {font-size:15pt; color:#333;}	
+.change span{ font-size:13pt; float:right; color:#666;}
+
+#cover:hover .change, #avatar:hover .change {display:block;}	
+
+/* --------------------------------------------------------------- */
+
+/* modal-window */	
+#window, #mascara, #drop-mask {display:none; position:fixed;}
+#mascara, #drop-mask		  {width:100%; height:100%;}
+#window, #mascara 			  {z-index:99;}
+#drop-mask 					  {z-index:100;}
+
+#mascara {background-color: #000;}
+#window {
+	min-width:300px;
+	min-height:300px;
+	background: url(../img/noise.png) #444; 
+}
+
+
+#close {
+	position:absolute;
+	right: -50px; 
+	bottom:0px;
+	width:50px;
+	height:50px;
+	border: 1px solid #333;
+	background: #FFFAC2;
+	color:#666;
+	font-size:25pt;
+	text-align:center;
+	}
+
+/* --------------------------------------------------------------- */	
+
+/* user INFORMATION e DESCRIPTION */
+.user_info input[type="text"] {
+	font-family:arial;
+	font-size:11pt; 
+	width:200px; 
+	padding:5px; 
+	margin:0; 
+	position:absolute;
+	left:170px;
+	border-bottom:1px dotted #999;
+
+	}
+	
+.user_info input[type="submit"] {
+	position:absolute;
+	right:-7px;
+	top:-63px;
+}
+.user_info textarea {
+	font-family:'Trebuchet MS';
+	font-size:12pt; 
+	line-height:21pt; 
+	color:#888;
+	border:none;
+	padding:30px 12px 0;
+	margin:-28px -16px;
+	max-width:380px;
+	min-width:380px;
+	}
+
+	
+.user_info a div 		 {color:#777; position:absolute; right:40px; top:-40px; display:none;}
+.user_info a div:before  {font-size:22pt;}	/* edit button */
+	
+	
+	
+	
+a:hover.no-info {color:#888;}
+a:active.no-info {color:#777;}
+.no-info:first-child {margin-top:60px;}
+.no-info {display:block; height:100px; text-align:center; margin-left:50px; position:relative; line-height:65px;}
+.no-info span:before {left:0px;}  /* "write about you" <a> */
+
+
+/* --------------------------------------------------------------- 
+.glass:after,
+#navigation a:hover  div:after,
+#navigation a.active div:after{
+    content: " "; 
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 0;
+    -webkit-background-origin: border-box;
+    -moz-background-origin: border;
+    background-origin: border-box;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .15)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+}	
+	
+/* status - SUBMIT */
+input#attr-submit {
+	position:absolute;
+	bottom:-65px; 
+	right:-8px; 
+	display:none;
+	}	
+
+/* -------------------------------------------------------------- */
+/* INVENTORY - backpack_items (options) */
+.item_action {float:right; border-left:1px solid #999; display:none;}
+.item_action div {width:130px; height:43px; border-bottom:1px solid #999; cursor:pointer; padding:10px 0px 0 50px; position:relative;}
+.item_action div:last-child {border-bottom:none;}
+.item_action div:hover {color:#DB4B4B;}
+.item_action div:before {font-size:20pt; top:5px; left:10px;}
+.backpack > div:hover .item_action {display:block;}
+
+
+
+
+

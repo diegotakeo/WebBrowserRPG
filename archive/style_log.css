@@ -1,0 +1,3 @@
+/* TOP */
+	   .logged div:before  {color: #64d857; text-shadow: 0 0 25px #60ff46;}
+a:hover.logged div:before  {color: #6ef15f;}

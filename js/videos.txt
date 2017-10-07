@@ -1,0 +1,6 @@
+<iframe width="853" height="480" src="http://www.youtube.com/embed/TANiCawy8Jo" frameborder="0" allowfullscreen></iframe> <!-- 	drawing 	-->
+<iframe width="853" height="480" src="http://www.youtube.com/embed/XW7ftqeQCfE" frameborder="0" allowfullscreen></iframe> <!-- 	strobe last -->
+<iframe width="853" height="480" src="http://www.youtube.com/embed/RFukJ3y24NU" frameborder="0" allowfullscreen></iframe> <!-- 	strobe light -->
+<iframe width="853" height="480" src="http://www.youtube.com/embed/RdE5lsI_kms" frameborder="0" allowfullscreen></iframe> <!--  thanatos 	-->
+<iframe width="853" height="480" src="http://www.youtube.com/embed/_wh0GDEww-o" frameborder="0" allowfullscreen></iframe> <!--  MAD 1 		-->
+<iframe width="853" height="480" src="http://www.youtube.com/embed/RPB4MaA1F7g" frameborder="0" allowfullscreen></iframe> <!--  MAD 2		-->

@@ -1,0 +1,51 @@
+/* -- STALKING NAVIGATION -- */
+a:hover#stalk 		div, a#stalk.active		 div{background:#5f5d89;}	
+a:hover#stalked		div, a#stalked.active	 div{background:#555;}	
+a:hover#stalked		div:after 					{border-color: transparent #fff;}
+
+a#stalk div:before {margin:5px 35px!important;}
+a#stalked div:before {font-size:28pt!important; margin:25px 25px;}
+a#stalked div:after {
+	/* arrow-label */
+	content: "";
+	position: absolute;
+	border-style: solid;
+	margin: 33px 85px;
+    border-width: 8px 0px 8px 8px;
+    border-color: transparent #555; 
+}
+a#stalked.active div:after {
+	margin: 38px 80px!important;
+    border-width: 8px 8px 0px 8px!important;
+    border-color: #fff transparent!important;	
+}
+
+#stalked.active ~ #y.dropdown {display:block!important;}
+#y.dropdown {margin:120px -250px; z-index:8; cursor:pointer; border-left:1px solid #333;}
+#y.dropdown:before{
+	/* arrow-TO-TOP */
+	top: -33px; 
+	left: 160px!important;
+	border-color: #fff transparent;
+}
+#y.dropdown div {
+	width:inherit;
+	border-bottom: 1px solid #333;
+	height:65px;
+}
+#y.dropdown .icon    	 		{background:#d48181;}
+#y.dropdown .icon:before 		{color:#5E1F1F; margin:10px;}
+#y.dropdown .icon.active 		{background:#65C97D;}
+#y.dropdown .icon.active:before {color:#0F3D1A; content: ""!important;}
+
+
+
+
+/* STALKING OPTIONS */
+
+#option-chatroom div,
+#option-notification div {width:65px!important; height:65px; margin-right:10px; border-right:1px solid #999; float:left;}
+
+#option-stop div 		{background:#fff!important;}	
+#option-stop div:before {color:#333!important; margin:10px;}
+#option-stop span 		{float:right; margin-right:50px;}

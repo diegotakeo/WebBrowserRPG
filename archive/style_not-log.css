@@ -1,0 +1,26 @@
+/* LOGIN BLOCK */
+#login {
+	position:relative; 
+	box-shadow: 2px 2px 0px rgba(1,1,1,.5),
+				4px 4px 0px rgba(1,1,1,.4),
+				8px 8px 0px rgba(1,1,1,.4);
+}
+
+#login label {position:absolute; right:-15px; }
+label[for="email"] 	{top:5px;}
+label[for="password"] {top:95px;}
+
+#login input[type="text"], #password {width:250px; margin-right:0;}
+#login input[type="submit"]  {
+	position:absolute; 
+	bottom:-64px; 
+	right:-3px; 
+	box-shadow:
+		inset 0px 8px 5px rgba(1,1,1,.4), 
+		15px 15px 15px rgba(1,1,1,.4),
+		2px 2px 0px rgba(1,1,1,.5),
+		4px 4px 0px rgba(1,1,1,.4);
+	}
+
+input[id="email"]:focus ~ label[for="email"] 	{color:#AB3C3C;}
+input#password:focus 	~ label[for="password"] {color:#29996C;}

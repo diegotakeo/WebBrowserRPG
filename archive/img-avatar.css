@@ -1,0 +1,88 @@
+/* ------- NAVIGATION ------------------------------------------------------------------------------------------------------------- */
+
+#file-box-nav {position:absolute; margin:0px -181px; width:180px; }
+#file-box-nav a.active span {
+	-webkit-transform:rotate(-7deg); 
+	-ms-transform:rotate(-7deg); 
+	transform:rotate(-7deg);
+	margin-right:6px; 
+}
+a[data-to="file-box-div"].active span {background:#FFFAC2; border:1px solid #333;}
+a[data-to="file-box-div"] span {
+	height:50px; 
+	background:#fff; 
+	margin:0 0 1px 1px; 
+	padding:8px 15px; 
+	float:right; 
+	color:#666;
+	}
+
+
+/* ------- DRAG-BOX_ ------------------------------------------------------------------------------------------------------------- */
+
+	#drag-box_ {float:right; display:none; position:relative;}
+	#drag-box_ .upload-label span {font-size:90pt; position:absolute; top:-20px; left:65px;}
+	#drag-box_ .upload-label {
+		width:inherit; 
+		height:inherit; 
+		position:absolute; 
+		left:0; 
+		z-index:8; 
+		cursor:pointer;
+		}
+
+/* ------- URL_ ------------------------------------------------------------------------------------------------------------- */
+
+	#url_ input {width:300px;}
+	#url_ input:focus ~ label:before {color:#fff798;}
+	#url_ .box-a {margin:10px 60px 30px; cursor:pointer;}
+	#url_ .box-a:before {margin:20px -40px; width:88px; height:88px;}
+	#url_ .box-a p {font-size:30pt;}
+
+	#url_ .box-a:hover,
+	#url_ .box-a.hover {color:#CCCF76; border-color:#CCCF76;}
+	
+	
+	
+/* ------- DEFAULT BOXES ------------------------------------------------------------------------------------------------------------- */
+
+.box-a:hover,
+.box-a.hover  {border-color:#999; color:#999; background: url(../img/noise.png) #4c4c4c;}
+
+.box-a { 	/* dashed-square with data-icon */
+	width:200px; 
+	height:200px; 
+	border:2px dashed #666; 
+	margin: 50px;
+	text-align:center;
+	position:relative;
+	}
+.box-a p {width:180px; margin:120px auto;}
+.box-a:before {
+	left:50%;
+	font-size:60pt;
+}
+
+div#current_ {display:block;}
+
+
+/* ------ PREVIEW IMG -------------------------------------------------------------------------------------------------------------- */
+
+div.img-prev 			  {width:300px; height:300px;  display:none; cursor:move;}
+div.img-prev .containment {overflow:hidden; width:inherit; height:inherit; position:relative; display:inline-block;}
+div.img-prev img.preview  {min-width:300px; min-height:300px; height:auto;}
+
+div.img-prev .slider {position:absolute; width:300px; bottom:-30px;}
+div.img-prev input 	 {position:absolute; bottom:46px; right:-94px;}
+
+
+a[href="#preview_"] {position:absolute; right:-52px; top:0px; display:none;}
+a[href="#preview_"].active span {background:#FF596D; color:#fff;}
+a[href="#preview_"] span,
+div.img-prev input {
+	z-index:-1;
+	box-shadow: inset 8px 0px 8px rgba(1,1,1,.5),
+				2px 2px 0px rgba(1,1,1,.5),
+				4px 4px 0px rgba(1,1,1,.4);
+}
+
