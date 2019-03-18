@@ -1,2 +1,3 @@
 # WebBrowserRPG
-Web Browser Game (started in 2013, currently on hold. Later I plan to rewrite most of the code with a more modular implementation and responsive design).
+REEEEEEEEEEEEALY OLD project that I made for fun.
+Some really BAD coding ahead, don't look!
